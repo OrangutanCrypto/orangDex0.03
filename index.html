@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>OrangutanX</title>
+        <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+        <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" href="orangutan0.5.png">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+           integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+           
+              <style>
+               @import url('https://fonts.googleapis.com/css2?family=Kufam:wght@500&display=swap');
+              </style> 
+            
+
+          
+        
+    </head>
+     
+        
+              <nav class="navbar">
+                <a class="navbar-brand"  rel="stylesheet">OrangutanXSwap</a>
+                   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                   aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                  <body ><div id="great-swap"><h5>Swap, earn, on a new low % fee decentralized crypto trading protocol.</h5></div>
+                   </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"><span class="sr-only">(current)</span></a>
+                    </li> 
+                  </ul>
+                       </div>   
+                        <div>
+                          <button id="btn-login" class="btn btn-outline- my-2 my-sm-0" type="submit">Sign in with Metamask</button>
+                         </form>
+                         </div>
+              
+                   <div class="nav-second">
+                      <ul>
+                       <li><i class="fa fa-home"></i>  swap</li>
+                        <li><i class="fa fa-pencil"></i>  pool</li>
+                        <li><i class="fa fa-search"></i>  Vote</li>
+                        <li><i class="fa fa-user-o"></i>  User</li>
+                        <li><i class="fa fa-envelope"></i>  charts</li>
+                      </ul>
+                    </div>
+                  </nav>
+              
+            <div class="container">
+              <div class="row">
+                <div id ="window" class="col col-md-6 offset-md-3">
+                 <h4>Swap</h4>
+                  <div id="form">
+                    <div class="swapbox">
+                      <div class="swapbox_select token_select" id ="from_token_select">
+                      Select token  
+                     </div>
+                      <div class="swapbox_select">
+                        <input class="number form-control" placeholder="get primal" id="from_amount">
+                      </div>  
+                   </div>
+                     <div class="swapbox">
+                       <div class="swapbox_select token_select" id ="to_token_select">
+                        Select token 
+                    </div>
+                    <div class="swapbox_select">
+                      <input class="number form-control" placeholder="ape on in" id="to_amount">
+                    </div>  
+                    </div>
+                     <button class="btn btn-large btn-primary btn-block" id="swap_button">
+                       Swap
+                     </button>
+                </div>
+               </div>
+            </div>
+            </div>
+        <div class="modal" id="token_modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Select token</h5>
+                <button id="modal_close" type="button" class="btn-close btn-close-black" data-bs-dismiss="modal" aria-label="Close">close</button>
+              </div>
+              <div class="modal-body">
+                <div id= token_list>   </div>
+              </div>
+              
+            </div>
+   
+        </div>
+        </div>
+      
+        
+   
+
+       <!-- <button id="btn-login">Moralis Metamask Login</button>
+        <button id="btn-logout">Logout</button> -->
+        <script type="text/javascript" src="./main.js"></script>
+      </div> 
+     <div class="col col-md-6 offset-md-3" id="monkey"> <img src="orangutan0.5.png"></div>
+     
+     
+
+      </body>
+ 
+</html>

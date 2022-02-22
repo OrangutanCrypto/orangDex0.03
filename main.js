@@ -10,22 +10,20 @@ async function init(){
     await Moralis.enable();
     await listAvailableTokens(); 
 }
-async function listAvailableTokens(){
-    
-        const tokens = await Moralis.Plugins.oneInch.getSupportedTokens({
-          chain: 'eth' // The blockchain you want to use (eth/bsc/polygon)
-        });
-        console.log(tokens);
-      }
-      
+async function getSupportedTokens() {
+  const tokens = await Moralis.Plugins.oneInch.getSupportedTokens({
+    chain: 'eth', // The blockchain you want to use (eth/bsc/polygon)
+  });
+  console.log(tokens);
+}
+
 
     async function login() {
         let user = Moralis.User.current();
         if (!user) {
             try {
-                user = await Moralis.authenticate({ signingMessage: "Hello World!" })
-                console.log(user)
-                console.log(user.get('ethAddress'))
+                user = await Moralis.authenticate({ signingMessage: "Hello World it's me Rang!" })
+                
             } catch (error) {
                 console.log(error)
             }
